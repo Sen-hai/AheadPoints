@@ -1,0 +1,129 @@
+.user-dashboard-page {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 24px;
+}
+
+.user-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.user-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card .ant-statistic {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card .ant-statistic-title {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.info-card .ant-statistic-content {
+  color: #333;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.history-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.history-table .ant-table-thead > tr > th {
+  background: #f5f5f5;
+}
+
+.history-table .ant-table-tbody > tr:hover > td {
+  background: #f0f8ff;
+}
+
+.ant-card {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
+  border-radius: 8px;
+  border: none;
+}
+
+.ant-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.ant-statistic-title {
+  font-size: 16px;
+  color: #555;
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  color: #206ca4;
+}
+
+.ant-table-thead > tr > th {
+  background: #f5f9ff;
+  font-weight: 600;
+  color: #206ca4;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f0f7ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .user-dashboard-page {
+    padding: 16px;
+  }
+
+  .ant-row {
+    margin: 0 !important;
+  }
+
+  .ant-col {
+    padding: 8px !important;
+  }
+
+  .user-info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card .ant-statistic-content {
+    font-size: 14px;
+  }
+}
