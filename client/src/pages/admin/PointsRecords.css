@@ -1,0 +1,19 @@
+.points-records-container {
+  padding: 24px;
+}
+
+.search-container {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info-card {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .points-records-container {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,182 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+.login-container {
+  width: 420px;
+  margin: 0 auto;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #206ca4;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+}
+
+.login-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: #5cbc8c;
+  border-radius: 4px;
+}
+
+.login-form {
+  margin-top: 30px;
+}
+
+.login-form-button {
+  width: 100%;
+  height: 50px;
+  background-color: #3a8dbb !important;
+  border-color: #3a8dbb !important;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.login-form-button:hover {
+  background-color: #206ca4 !important;
+  border-color: #206ca4 !important;
+  transform: translateY(-2px);
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(32, 108, 164, 0.2);
+}
+
+.login-form-register {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #3a8dbb;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.login-form-register:hover {
+  color: #206ca4;
+}
+
+.ant-input,
+.ant-input-password {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(58, 141, 187, 0.3);
+  transition: all 0.3s;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.ant-input:hover,
+.ant-input-password:hover {
+  border-color: #3a8dbb;
+}
+
+.ant-input:focus,
+.ant-input-password-focused,
+.ant-input-affix-wrapper-focused {
+  border-color: #3a8dbb !important;
+  box-shadow: 0 0 0 2px rgba(58, 141, 187, 0.2) !important;
+}
+
+.ant-input-affix-wrapper {
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(58, 141, 187, 0.3);
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: #3a8dbb;
+}
+
+.site-form-item-icon {
+  color: #3a8dbb;
+  font-size: 18px;
+}
+
+.wallet-connect-section {
+  margin-top: 25px;
+  border-top: 1px solid rgba(58, 141, 187, 0.2);
+  padding-top: 25px;
+}
+
+.wallet-connect-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.wallet-connect-button {
+  width: 100%;
+  height: 50px;
+  background-color: #5cbc8c !important;
+  border-color: #5cbc8c !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.wallet-connect-button:hover {
+  background-color: #4a9972 !important;
+  border-color: #4a9972 !important;
+  transform: translateY(-2px);
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(92, 188, 140, 0.2);
+}
+
+.wallet-connect-button .anticon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.wallet-status {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+}
+
+.wallet-address {
+  font-family: monospace;
+  background-color: #f0f5fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  word-break: break-all;
+  margin-top: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+@media (max-width: 576px) {
+  .login-container {
+    width: 100%;
+    padding: 25px;
+  }
+}

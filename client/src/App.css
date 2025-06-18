@@ -1,0 +1,103 @@
+/* 移除所有默认样式 */
+
+/* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f0f5fa; /* 轻微调整为淡蓝色背景，与校园风格协调 */
+}
+
+/* 确保主页内容距离导航栏有足够间距 */
+.main-content {
+  padding-top: 64px; /* 导航栏高度 */
+  min-height: calc(100vh - 64px);
+}
+
+/* 页面通用样式 */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 导航栏样式 */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(32, 108, 164, 0.95); /* 蓝色，与校园建筑相协调 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 卡片通用样式 */
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 4px 12px rgba(32, 108, 164, 0.15); /* 修改阴影颜色，与主题相协调 */
+}
+
+/* 按钮通用样式 */
+.btn-primary {
+  background-color: #3a8dbb !important; /* 蓝色，与校园建筑相协调 */
+  border-color: #3a8dbb !important;
+}
+
+.btn-primary:hover {
+  background-color: #206ca4 !important; /* 深一点的蓝色 */
+  border-color: #206ca4 !important;
+}
+
+.btn-success {
+  background-color: #5cbc8c !important; /* 绿色，与校园里的树木相协调 */
+  border-color: #5cbc8c !important;
+}
+
+.btn-success:hover {
+  background-color: #4a9972 !important; /* 深一点的绿色 */
+  border-color: #4a9972 !important;
+}
+
+/* 链接样式 */
+a {
+  color: #3a8dbb;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #206ca4;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4cfe0; /* 淡蓝色滚动条，与校园风格协调 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a8dbb;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 50px;
+  }
+}
